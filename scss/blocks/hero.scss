@@ -1,5 +1,5 @@
 .hero{
-    background:  url("../../img/bg/bg_leaf.png") right bottom no-repeat;
+    background:  url("../img/bg/bg_leaf.png") right bottom no-repeat;
     background-color: $blue;
     height: 100vh;
     min-height: 625px;
@@ -7,7 +7,7 @@
     position: relative;
 
     &::before{
-        content: url('../../img/decor/decor__hero/leaf3.png');
+        content: url('../img/decor/decor__hero/leaf3.png');
         display: block;
         position: absolute;
         left: 2%;
@@ -17,7 +17,7 @@
     }
   
     &::after{
-        content: url('../../img/decor/decor__hero/leaf1.png');
+        content: url('../img/decor/decor__hero/leaf1.png');
         
         display: block;
         position: absolute;
@@ -33,12 +33,12 @@
 
     justify-content: space-between;
     height: 100%;
-    background: url("../../img/bg/bars.png") right center/50% no-repeat;
+    background: url("../img/bg/bars.png") right center/50% no-repeat;
     padding: 24px 0px 59px 0px;
     
 
     &::before{
-        content: url('../../img/decor/decor__hero/berries1.png');
+        content: url('../img/decor/decor__hero/berries1.png');
         
         display: block;
         position: absolute;
@@ -50,7 +50,7 @@
 
 
     &::after{
-        content: url('../../img/decor/decor__hero/leaf2.png');
+        content: url('../img/decor/decor__hero/leaf2.png');
         
         display: block;
         position: absolute;
@@ -83,7 +83,7 @@
     height: 100px;
 
     &::before{
-        content: url('../../img/decor/decor__hero/berries2.png');
+        content: url('../img/decor/decor__hero/berries2.png');
         display: block;
         position: absolute;
         right: 6%;

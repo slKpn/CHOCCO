@@ -8,11 +8,11 @@
     
 }
 .section-why{
-    background: url('../../img/decor/decor__why/leaf4.png') left center no-repeat;
+    background: url('../img/decor/decor__why/leaf4.png') left center no-repeat;
     position: relative;
 
     &::before{
-        content: url('../../img/decor/decor__why/razz.png');
+        content: url('../img/decor/decor__why/razz.png');
         display: block;
         position: absolute;
         left: 0;
@@ -22,7 +22,7 @@
 .section-reviews{
    position: relative;
     &::after{
-        content: url('../../img/decor/decor__reviews/berries6.png');
+        content: url('../img/decor/decor__reviews/berries6.png');
         display: block;
         position: absolute;
         left: 0;
@@ -30,7 +30,7 @@
         z-index: 2;
     }
     &::before{
-        content: url('../../img/decor/decor__reviews/leaf5.png');
+        content: url('../img/decor/decor__reviews/leaf5.png');
         display: block;
         position: absolute;
         left: 0;
@@ -39,10 +39,10 @@
     }
 }
 .sections-forms{
-    background: url('../../img/bg/bg_forms.png') no-repeat;
+    background: url('../img/bg/bg_forms.png') no-repeat;
     position: relative;
     &::after{
-        content: url('../../img/decor/decor_forms/leaf3_1.png');
+        content: url('../img/decor/decor_forms/leaf3_1.png');
         
         display: block;
         position: absolute;
@@ -51,7 +51,7 @@
     }
 
     &::before{
-        content: url('../../img/decor/decor_forms/img1.png');
+        content: url('../img/decor/decor_forms/img1.png');
         
         display: block;
         position: absolute;

@@ -433,7 +433,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/bg/bg_leaf.png") right bottom no-repeat;
+  background: url("../img/bg/bg_leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 625px;
@@ -441,14 +441,14 @@ img {
   position: relative;
 }
 .hero::before {
-  content: url("../../img/decor/decor__hero/leaf3.png");
+  content: url("../img/decor/decor__hero/leaf3.png");
   display: block;
   position: absolute;
   left: 2%;
   bottom: -40px;
 }
 .hero::after {
-  content: url("../../img/decor/decor__hero/leaf1.png");
+  content: url("../img/decor/decor__hero/leaf1.png");
   display: block;
   position: absolute;
   right: 1%;
@@ -460,18 +460,18 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background: url("../../img/bg/bars.png") right center/50% no-repeat;
+  background: url("../img/bg/bars.png") right center/50% no-repeat;
   padding: 24px 0px 59px 0px;
 }
 .hero__container::before {
-  content: url("../../img/decor/decor__hero/berries1.png");
+  content: url("../img/decor/decor__hero/berries1.png");
   display: block;
   position: absolute;
   right: 17%;
   bottom: 30px;
 }
 .hero__container::after {
-  content: url("../../img/decor/decor__hero/leaf2.png");
+  content: url("../img/decor/decor__hero/leaf2.png");
   display: block;
   position: absolute;
   right: 18%;
@@ -506,7 +506,7 @@ img {
   height: 100px;
 }
 .decor_berries::before {
-  content: url("../../img/decor/decor__hero/berries2.png");
+  content: url("../img/decor/decor__hero/berries2.png");
   display: block;
   position: absolute;
   right: 6%;
@@ -640,11 +640,11 @@ img {
 }
 
 .section-why {
-  background: url("../../img/decor/decor__why/leaf4.png") left center no-repeat;
+  background: url("../img/decor/decor__why/leaf4.png") left center no-repeat;
   position: relative;
 }
 .section-why::before {
-  content: url("../../img/decor/decor__why/razz.png");
+  content: url("../img/decor/decor__why/razz.png");
   display: block;
   position: absolute;
   left: 0;
@@ -655,7 +655,7 @@ img {
   position: relative;
 }
 .section-reviews::after {
-  content: url("../../img/decor/decor__reviews/berries6.png");
+  content: url("../img/decor/decor__reviews/berries6.png");
   display: block;
   position: absolute;
   left: 0;
@@ -663,7 +663,7 @@ img {
   z-index: 2;
 }
 .section-reviews::before {
-  content: url("../../img/decor/decor__reviews/leaf5.png");
+  content: url("../img/decor/decor__reviews/leaf5.png");
   display: block;
   position: absolute;
   left: 0;
@@ -671,18 +671,18 @@ img {
 }
 
 .sections-forms {
-  background: url("../../img/bg/bg_forms.png") no-repeat;
+  background: url("../img/bg/bg_forms.png") no-repeat;
   position: relative;
 }
 .sections-forms::after {
-  content: url("../../img/decor/decor_forms/leaf3_1.png");
+  content: url("../img/decor/decor_forms/leaf3_1.png");
   display: block;
   position: absolute;
   right: 1%;
   bottom: 110px;
 }
 .sections-forms::before {
-  content: url("../../img/decor/decor_forms/img1.png");
+  content: url("../img/decor/decor_forms/img1.png");
   display: block;
   position: absolute;
   left: 5%;
@@ -707,7 +707,7 @@ img {
   position: relative;
 }
 .advantages__item::before {
-  content: url("../../img/decor/decor__why/Shape.png");
+  content: url("../img/decor/decor__why/Shape.png");
   display: block;
   position: absolute;
   top: 60px;
@@ -782,7 +782,7 @@ img {
 }
 
 .reviews__display {
-  background: url("../../img/decor/decor__reviews/berries.png") right top 10% no-repeat;
+  background: url("../img/decor/decor__reviews/berries.png") right top 10% no-repeat;
   background-color: #F8FAF9;
   margin-bottom: 15px;
   position: relative;
@@ -1028,7 +1028,7 @@ img {
   display: none;
   width: 13px;
   height: 13px;
-  background: url("../../img/decor/decor_forms/Vector.svg") center center no-repeat;
+  background: url("../img/decor/decor_forms/Vector.svg") center center no-repeat;
   background-size: 13px 13px;
   position: absolute;
   top: 50%;
