@@ -1,0 +1,93 @@
+.hero{
+    background:  url("../../img/bg/bg_leaf.png") right bottom no-repeat;
+    background-color: $blue;
+    height: 100vh;
+    min-height: 625px;
+    color: #fff;
+    position: relative;
+
+    &::before{
+        content: url('../../img/decor/decor__hero/leaf3.png');
+        display: block;
+        position: absolute;
+        left: 2%;
+        bottom: -40px;
+
+       
+    }
+  
+    &::after{
+        content: url('../../img/decor/decor__hero/leaf1.png');
+        
+        display: block;
+        position: absolute;
+        right: 1%;
+        bottom: 110px;
+    }
+    
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    height: 100%;
+    background: url("../../img/bg/bars.png") right center/50% no-repeat;
+    padding: 24px 0px 59px 0px;
+    
+
+    &::before{
+        content: url('../../img/decor/decor__hero/berries1.png');
+        
+        display: block;
+        position: absolute;
+        right: 17%;
+        bottom: 30px;
+    }
+
+
+
+
+    &::after{
+        content: url('../../img/decor/decor__hero/leaf2.png');
+        
+        display: block;
+        position: absolute;
+        right: 18%;
+        bottom: -40px;
+    }
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    max-width: 46%;
+}
+.hero__title{
+    margin-bottom: 17px;
+}
+.hero__desc{
+    font-size: 21px;
+    font-weight: 400;
+    padding: 0 17% 0 0;
+    margin-bottom: 32px;
+}
+.hero__btn{
+    margin-top: auto 0;
+}
+.decor_berries{
+    width: 100px;
+    height: 100px;
+
+    &::before{
+        content: url('../../img/decor/decor__hero/berries2.png');
+        display: block;
+        position: absolute;
+        right: 6%;
+        bottom: -56px;
+        
+    }
+}

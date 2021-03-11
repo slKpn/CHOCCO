@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    font-size: $baseFontSize;
+    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.42; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: $gray;
+
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    font-weight: normal;
+
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    &:focus{
+        outline: none;
+    }
+}
+ul{
+    padding: 0;
+    margin: 0;
+    
+    li{
+        list-style: none;
+    }
+}
+button{
+    cursor: pointer;
+    border:0;
+    background: transparent;
+    outline: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.wrapper{
+    overflow: hidden;
+    min-width: $containerWidth+20;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+
+.container{
+    width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.feature{
+    display: flex;
+    align-items: center;
+
+   
+}
+.feature__icon{
+    width: 40px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.feature__desc{
+    max-width: 114px;
+    font-size: 16px;
+    padding: 0 7% 0 0;
+    line-height: 1.2;   
+}

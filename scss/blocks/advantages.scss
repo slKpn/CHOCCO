@@ -1,0 +1,30 @@
+.advantages{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.advantages__item{
+    flex:1;
+    padding: 0 3%;
+    position: relative;
+
+    &::before{
+        content: url('../../img/decor/decor__why/Shape.png');
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transform: translateX(50%);
+    }
+    &:first-child{
+        padding-left: 0;
+    }
+    &:last-child{
+        padding-right: 0;
+        
+        &::before{
+            display: none;
+        }
+    }
+}

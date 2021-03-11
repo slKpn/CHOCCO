@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    &__logo-wrapper{
+        flex-shrink: 0;
+        margin-right: 40px;
+    }
+}
+.menu{
+    flex: 1;
+}
+.menu__list{
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+.menu__item{
+
+    margin-right: 27px;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+
+    .menu__link:hover{
+        color: $green;
+    }
+}
+.phone{
+    flex-shrink: 0;
+    font-size: 22px;
+ 
+  
+}
+.phone__link{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    
+}
+.phone__icon-wrapper{
+    margin-right: 6px;
+}
+.phone__icon{
+    width: 14px;
+    height: 14px;
+}

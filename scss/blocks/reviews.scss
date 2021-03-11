@@ -1,0 +1,70 @@
+.reviews{
+
+}
+.reviews__display{
+    
+    background: url('../../img/decor/decor__reviews/berries.png') right top 10% no-repeat;
+    background-color:  #F8FAF9 ;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: "";
+
+        border-radius: 50%;
+        display: block;
+        width: 83px;
+        height: 83px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: -55px;
+        transform: translateX(-50%);
+        
+
+    }
+}
+.reviews__display-inner{
+    display: flex;   
+    align-items: center; 
+    padding: 42px;
+    
+}
+.reviews__avatar{
+    width: 253px;
+    height: 264px;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+.reviews__content{
+    display: flex;
+    flex-direction: column;
+    
+}
+.reviews__title{
+    margin-bottom: 12px;
+    text-transform: unset;
+}
+.reviews__text-desc{
+    margin-bottom: 25px;
+    padding-right: 142px;
+
+    p{
+        line-height: 1.2;
+        flex: 1;
+    }
+}
+
+
+.reviews__author{
+    font-size: $baseFontSize;
+    font-weight:500;
+    color: $black;
+}
+
+.reviews__switcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,66 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 650px;
+    height: 100vh;
+
+    
+}
+.section-why{
+    background: url('../../img/decor/decor__why/leaf4.png') left center no-repeat;
+    position: relative;
+
+    &::before{
+        content: url('../../img/decor/decor__why/razz.png');
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -115px;
+    }
+}
+.section-reviews{
+   position: relative;
+    &::after{
+        content: url('../../img/decor/decor__reviews/berries6.png');
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -86px;
+        z-index: 2;
+    }
+    &::before{
+        content: url('../../img/decor/decor__reviews/leaf5.png');
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -160px;
+        
+    }
+}
+.sections-forms{
+    background: url('../../img/bg/bg_forms.png') no-repeat;
+    position: relative;
+    &::after{
+        content: url('../../img/decor/decor_forms/leaf3_1.png');
+        
+        display: block;
+        position: absolute;
+        right: 1%;
+        bottom: 110px;
+    }
+
+    &::before{
+        content: url('../../img/decor/decor_forms/img1.png');
+        
+        display: block;
+        position: absolute;
+        left: 5%;
+        bottom: 110px;
+    }
+}
+.sections-forms__title{
+    color: $green;
+    text-align: center;
+    margin-bottom: 83px;
+}

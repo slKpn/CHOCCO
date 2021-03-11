@@ -1,0 +1,19 @@
+.top-line{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-bottom: 50px;
+}
+.top-line__title{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.top-line__subtitle{
+    max-width: 436px;
+    font-size: $baseFontSize;
+    font-weight: 400;
+    text-align: center;
+    color: $gray;
+}

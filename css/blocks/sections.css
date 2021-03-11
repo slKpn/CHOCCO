@@ -1,0 +1,11 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 650px;
+  height: 100vh;
+}
+
+.top-line_title {
+  display: flex;
+}

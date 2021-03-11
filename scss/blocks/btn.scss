@@ -1,0 +1,38 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 21px 41px;
+    border-radius: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    &_theme_white{
+        background: #fff;
+        color: $green;
+
+        &:hover{
+            background:  $green;
+            color: #fff;
+        }
+    }
+
+    &_theme_green{
+        background: $green;
+        color:#fff;
+        &:hover{
+            background: $darkGreen;
+        }
+    }
+    &_theme_noBg{
+        background: transparent;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: none;
+        color: #497870;
+
+        &:hover{
+            color: $black
+        }
+    }
+}

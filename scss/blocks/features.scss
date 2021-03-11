@@ -1,0 +1,21 @@
+.features{
+ 
+
+
+   
+} 
+.features__list{
+    display: flex;
+    align-items: flex-start;
+    max-width: 74%;
+    flex-wrap: wrap;
+    
+ }
+
+.features__item{
+   margin-right: 9px;
+
+   &:last-child{
+       margin-right: 0;
+   }
+}

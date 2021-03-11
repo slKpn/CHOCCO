@@ -1,0 +1,16 @@
+.title{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black;
+
+    &_size_xl{
+        font-size: $titleSizeXl;
+        line-height: 1.2;
+    }
+    &_size_m{
+        font-size: $titleSizeM;
+    }
+}
+.hero__title{
+    color: #fff;
+}
