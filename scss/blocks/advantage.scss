@@ -9,7 +9,8 @@
 .advantage__img-wrapper{
     margin-bottom: 20px;
     display: inline-flex;
-
+    justify-content: center;
+    align-items: center;
     width: 128px;
     height: 128px;
     position: relative;
@@ -20,10 +21,8 @@
 .advantage__img{
     width: 64px;
     height: 68px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+    
 
 }
 .advantage__title{

@@ -1,11 +1,11 @@
 .feature{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
    
 }
 .feature__icon{
-    width: 40px;
+ 
     margin-right: 12px;
     flex-shrink: 0;
 }

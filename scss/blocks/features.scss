@@ -1,9 +1,4 @@
-.features{
- 
 
-
-   
-} 
 .features__list{
     display: flex;
     align-items: flex-start;
@@ -13,7 +8,8 @@
  }
 
 .features__item{
-   margin-right: 9px;
+    margin-right: 38px;
+    max-width: 136px;
 
    &:last-child{
        margin-right: 0;

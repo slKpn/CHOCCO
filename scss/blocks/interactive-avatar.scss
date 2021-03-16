@@ -6,8 +6,12 @@
     overflow: hidden;
     position: relative;
 
-    &__active{
+    &_active{
         border:6px solid $green;
+    }
+    &:hover{
+        border:6px solid $green;
+        transition: .6s;
     }
 
     
