@@ -1,36 +1,47 @@
 .reviews{
     &::before{
-        content: url('../../img/decor/decor__reviews/berries5.png');
+        content:" ";
 
         border-radius: 50%;
         display: block;
-        width: 83px;
-        height: 83px;
-        background: #fff;
+        width: rem(136px);
+            height: rem(78px);
+        background: #fff  url('../../img/decor/decor__reviews/berries5.png') center center/contain no-repeat;
         position: absolute;
         right: 4%;
-        top: -55px;
-    
+        top: rem(-55px);
+        @include tablets{
+            right: 1%;
+            top: rem(-174px);
+        }
+        @include phones{
+            width: rem(136px);
+            height: rem(78px);
+            right: -8%;
+            top: rem(-80px);
+           
+        }
         
 
     }
+   
 }
 .reviews__display{
     
     background: url('../img/decor/decor__reviews/berries.png') right top 10% no-repeat;
     background-color:  #F8FAF9 ;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     position: relative;
     overflow: hidden;
-
+    
     &::before{
-      
+        content: "";
 
         border-radius: 50%;
         display: block;
-        width: 83px;
-        height: 83px;
-        background: #fff;
+        width: rem(83px);
+        height: rem(83px);
+        background: #FFF;
         position: absolute;
         left: 50%;
         top: -55px;
@@ -38,35 +49,69 @@
         
 
     }
+
+    @include tablets{
+        margin-bottom: rem(32px);
+        background-position: right top 4%;
+    }
+
 }
 .reviews__display-inner{
     display: flex;   
     align-items: center; 
-    padding: 42px;
+    padding: rem(42px);
+
+    @include tablets{
+        flex-direction: column;
+        padding: rem(56px) rem(23px) rem(24px);
+
+    }
     
 }
 .reviews__avatar{
-    width: 253px;
-    height: 264px;
+
+    width: rem(253px);
+    height: rem(264px);
     flex-shrink: 0;
-    margin-right: 40px;
+    margin-right: rem(40px);
+
+    @include tablets{
+        width: rem(130px);
+        height: rem(130px);
+        align-items: center;
+        overflow: hidden;
+        margin-right: 0;
+        margin-bottom: rem(32px);
+        
+    }
+
 }
 .reviews__content{
     display: flex;
     flex-direction: column;
+    @include tablets{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     
 }
 .reviews__title{
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
     text-transform: unset;
 }
 .reviews__text-desc{
-    margin-bottom: 25px;
-    padding-right: 142px;
+    margin-bottom: rem(25px);
+    padding-right: rem(142px);
 
     p{
         line-height: 1.2;
         flex: 1;
+    }
+
+    @include tablets{
+        margin-bottom: rem(16px);
+        padding-right: 0;
     }
 }
 

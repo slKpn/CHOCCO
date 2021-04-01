@@ -2,12 +2,15 @@
 @import "layout/normalize.scss"; 
 @import "layout/fonts.scss";
 @import "layout/variables.scss";
+@import "layout/media.scss"; 
 @import "layout/base.scss";  
+
 
 /*blocks*/
 @import "blocks/title.scss";
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
+@import "blocks/hamburger.scss";
 @import "blocks/features.scss";
 @import "blocks/feature.scss";
 @import "blocks/btn.scss";

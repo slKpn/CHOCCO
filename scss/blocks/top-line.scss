@@ -3,17 +3,37 @@
     flex-direction: column;
     
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
+
+    @include tablets{
+        padding: rem(51px) 0;
+        margin-bottom: 0;
+    }
+    @include phones{
+        padding: 0;
+        margin-bottom: rem(62px);
+    }
 }
 .top-line__title{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+
+    @include tablets{
+        padding-top: 4%;
+        margin-bottom: 0;
+    }
+    @include phones{
+        padding: 0;
+        margin-bottom: rem(12px);
+        font-size: rem(40px);
+    }
 
 }
 .top-line__subtitle{
-    max-width: 436px;
+    max-width: rem(436px);
     font-size: $baseFontSize;
     font-weight: 400;
     text-align: center;
     color: $gray;
+
 }

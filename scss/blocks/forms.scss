@@ -1,64 +1,119 @@
 .forms{
     display: flex;
- 
+    
+    @include tablets{
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0 18%;
+    }
+    @include phones{
+        padding: 0;
+    }
 
 }
 .forms__col{
     flex: 1;
-    margin-right: 28px;
+    margin-right: rem(28px);
    
    
     &:last-child{
+        margin-right: 0;
+    }
+    @include tablets{
+        margin-right: 0;
+    }
+    @include phones{
         margin-right: 0;
     }
 }
 .forms__row{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
+    @include tablets{
+        margin-bottom: rem(14px);
+    }
 }
 .forms__label{
     flex: 1;
-    margin-right: 14px;
+    margin-right: rem(14px);
 
     &:last-child{
         margin-right: 0;
     }
 }
 .forms__label_textarea{
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    @include tablets{
+        margin-bottom: 0;
+    }
 }
 .forms__input{
-    border: 3px solid transparent;
+    border: rem(3px) solid transparent;
     width: 100%;
     line-height: 1.42;
-    padding: 18px 12px ;
+    padding: rem(18px) rem(12px) ;
     color: $black;
-    border-radius: 5px;
-   
+    border-radius: rem(5px);
+    @include tablets{
+        height: rem(36px);
+    }
     &:focus{
-        border:3px solid $lightGold;
+        border:rem(3px) solid $lightGold;
         
         outline: none;
     }
     &_textarea{
-        height: 152px;
+        height: rem(152px);
         resize: none;
+        @include tablets{
+            height: rem(82px);
+          
+        }
+      
      
     }
+   
 }
 .forms__controls{
     display: flex;
     flex-wrap: wrap;
+    @include phones{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
-.forms__btn{
+.form__btns{
     display: flex;
-    padding: 47px 0 0 0 ;
-    margin-right: 22px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+    
+}
+
+
+
+.forms__btn{
+    display: inline-flex;
+    padding: rem(47px) 0 0 0 ;
+    margin-right: rem(22px);
 
     &:last-child{
 
         margin-right: 0;
+    }
+    @include tablets{
+        display: inline-flex;
+        padding: 0 0 40px 0 ;
+        margin-right: rem(10px);
+        
+        
+    }
+    @include phones{
+        padding: rem(46px) 0;
     }
 }

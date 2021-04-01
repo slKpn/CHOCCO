@@ -3,15 +3,24 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 
+    @include tablets{
+        padding: 0 rem(15px);
+    }
     &__logo-wrapper{
         flex-shrink: 0;
-        margin-right: 40px;
+        margin-right: rem(40px);
     }
+
 }
 .menu{
+    @include tablets{
+        display: none;
+    }
     flex: 1;
+
+ 
 }
 .menu__list{
     display: flex;
@@ -20,7 +29,7 @@
 }
 .menu__item{
 
-    margin-right: 27px;
+    margin-right: rem(27px);
     
     &:last-child{
         margin-right: 0;
@@ -33,20 +42,25 @@
 }
 .phone{
     flex-shrink: 0;
-    font-size: 22px;
+    font-size: rem(22px);
  
   
+}
+.phone__link.phone__link_header{
+    @include tablets{
+        display: none;
+    }
 }
 .phone__link{
     display: inline-flex;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 rem(12px);
     
 }
 .phone__icon-wrapper{
-    margin-right: 6px;
+    margin-right: rem(6px);
 }
 .phone__icon{
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
 }
