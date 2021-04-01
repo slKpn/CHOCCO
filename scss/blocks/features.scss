@@ -8,8 +8,8 @@
  }
 
 .features__item{
-    margin-right: 38px;
-    max-width: 136px;
+    margin-right: rem(38px);
+    max-width: rem(136px);
 
    &:last-child{
        margin-right: 0;

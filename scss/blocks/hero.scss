@@ -1,17 +1,28 @@
 .hero{
     background:  url("../img/bg/bg_leaf.png") right bottom no-repeat;
     background-color: $blue;
+    
     height: 100vh;
-    min-height: 625px;
+    min-height: rem(625px);
     color: #fff;
     position: relative;
+   
+    @include tablets{
+        background-position: right top 25%;    
+    }
+    @include phones{
+        background-size: rem(324px) rem(410px);
+        background-position: right top 18%;    
+    }
+
+    
 
     &::before{
         content: url('../img/decor/decor__hero/leaf3.png');
         display: block;
         position: absolute;
         left: 2%;
-        bottom: -40px;
+        bottom: rem(-40px);
 
        
     }
@@ -22,9 +33,15 @@
         display: block;
         position: absolute;
         right: 1%;
-        bottom: 110px;
+        bottom: rem(110px);
     }
-    
+
+    &::before, &::after{
+        @include tablets{
+            display: none;
+        }
+    }
+
 }
 
 .hero__container{
@@ -34,16 +51,20 @@
     justify-content: space-between;
     height: 100%;
     background: url("../img/bg/bars.png") right center/50% no-repeat;
-    padding: 24px 0px 59px 0px;
+    padding: rem(24px) rem(0px) rem(59px) rem(0px);
     
+    @include tablets{
+        background: none;
+     
+    }
 
     &::before{
         content: url('../img/decor/decor__hero/berries1.png');
         
         display: block;
         position: absolute;
-        right: 17%;
-        bottom: 30px;
+        right: 0%;
+        bottom: rem(30px);
     }
 
 
@@ -54,40 +75,123 @@
         
         display: block;
         position: absolute;
-        right: 18%;
-        bottom: -40px;
+        right: 2%;
+        bottom: rem(-40px);
     }
+    &::before, &::after{
+        @include tablets{
+            display: none;
+            
+        }
+    }
+
+
+    
 }
 .hero__content{
     display: flex;
     flex-direction: column;
+    min-height: 650px;
     justify-content: space-between;
     overflow: hidden;
 
-    max-width: 46%;
+   width: 46%;
+
+    @include tablets {
+   
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        &::before{
+            content:""  ;
+            display: flex;
+            min-height: rem(338px);
+            width: rem(325px);
+            height: rem(338px);
+            background:  url('../../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
+       
+        }
+    
+    }
+    @include phones{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        &::before{
+            content:""  ;
+            display: flex;
+            width: rem(325px);
+            height: rem(338px);
+            background:  url('../../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
+          
+            margin-bottom: rem(23px);
+        }
+    }
 }
 .hero__title{
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
+    
+    @include phones{
+        font-size: rem(40px);
+        padding: 0 rem(10px);
+    }
 }
 .hero__desc{
-    font-size: 21px;
+    font-size: rem(21px);
     font-weight: 400;
     padding: 0 17% 0 0;
-    margin-bottom: 32px;
+    margin-bottom: rem(32px);
+
+    @include tablets{
+        padding: 0 26%;
+        margin-bottom: rem(15px);
+    }
+    @include phones{
+        padding: 0 16%;
+        margin-bottom: rem(26px);
+        font-size: rem(18px);
+    }
 }
 .hero__btn{
     margin-top: auto 0;
+    @include tablets{
+        padding-bottom: rem(60px);
+    }
+
 }
+
+.hero__features{
+    @include tablets {
+        display: none;
+    }
+}
+
 .decor_berries{
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
 
     &::before{
         content: url('../img/decor/decor__hero/berries2.png');
         display: block;
         position: absolute;
         right: 6%;
-        bottom: -56px;
+        bottom: rem(-56px);
         
     }
+    &::before{
+        @include tablets{
+            display: none;
+        }
+    }
+    
 }

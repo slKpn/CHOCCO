@@ -5,30 +5,48 @@
     
     align-items: center;
     text-align: center; 
+
+    @include phones{
+      flex-direction: row;
+      text-align: left;  
+      padding: 0;
+
+
+    }
 }
 .advantage__img-wrapper{
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     position: relative;
     background-color: $light;
     border-radius: 50%;
     overflow: hidden;
+    
+    @include phones{
+        flex-shrink: 0;
+        margin-right: rem(12px);
+        margin-bottom: 0;
+    }
 }
 .advantage__img{
-    width: 64px;
-    height: 68px;
+    width: rem(64px);
+    height: rem(68px);
 
     
 
 }
 .advantage__title{
-   margin-bottom: 18px;
+   margin-bottom: rem(18px);
    text-transform: none;
+   @include phones{
+       margin-bottom: rem(14px);
+   }       
 }
+
 .advantage__text-desc{
     p{
         font-weight: 300;

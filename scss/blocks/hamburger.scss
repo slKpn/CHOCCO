@@ -1,0 +1,45 @@
+.hamburger{
+    display: none;
+    width: 26px;
+    height: 23px;
+    position: relative;
+
+    @include tablets{
+        display: inline-block;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.hamburger__plank{
+    width: 26px;
+    height: 4px;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    
+
+    &::before{
+        content: "";
+       
+        width: 26px;
+        height: 4px;
+        display: block;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top:20px;
+    }
+    
+    &::after{
+        content: "";
+        width: 26px;
+        height: 4px;
+        display: block;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top:10px;
+    }
+    
+}

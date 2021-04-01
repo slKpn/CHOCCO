@@ -5,11 +5,13 @@
     right: 3%;
     transform: translateY(-50%);
     
-
+    @include tablets{
+        display: none;
+    }
 }
 
 .fixed-menu__item{
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
     
     &_active{
         .fixed-menu__link{
@@ -22,17 +24,17 @@
 }
 .fixed-menu__link{
     display: block;
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     position: relative;
     border-radius: 50%;
-    border:1px solid transparent;
+    border:rem(1px) solid transparent;
 
     &::before{
         content: '';
         display: block;
-        width: 9px;
-        height: 9px;
+        width: rem(9px);
+        height: rem(9px);
         border-radius: 50%;
         background-color: #fff;
         position: absolute;
