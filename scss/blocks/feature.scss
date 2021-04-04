@@ -4,11 +4,23 @@
 
    
 }
-.feature__icon{
+.feature__icons{
  
     margin-right: rem(12px);
     flex-shrink: 0;
+    
+    fill:#C6F7FF;
+    width: rem(37px);
+    height: rem(37px);
+    
 }
+
+.feature__icon{
+    fill:#C6F7FF;
+    width: rem(38px);
+    height: rem(38px);
+}
+
 .feature__desc{
     max-width: rem(114px);
     font-size: rem(16px);
