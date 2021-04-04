@@ -545,7 +545,7 @@ img {
     min-height: 18.7777777778rem;
     width: 18.0555555556rem;
     height: 18.7777777778rem;
-    background: url("../../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
+    background: url("../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
   }
 }
 @media screen and (max-width: 480px) {
@@ -564,7 +564,7 @@ img {
     display: flex;
     width: 18.0555555556rem;
     height: 18.7777777778rem;
-    background: url("../../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
+    background: url("../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
     margin-bottom: 1.2777777778rem;
   }
 }
@@ -769,9 +769,6 @@ img {
 .feature__icons {
   margin-right: 0.6666666667rem;
   flex-shrink: 0;
-  fill: #C6F7FF;
-  width: 2.0555555556rem;
-  height: 2.0555555556rem;
 }
 
 .feature__icon {
