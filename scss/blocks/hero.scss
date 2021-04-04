@@ -8,11 +8,13 @@
     position: relative;
    
     @include tablets{
-        background-position: right top 25%;    
+        background-position: right top 25%; 
+        min-height: rem(650px);   
     }
     @include phones{
         background-size: rem(324px) rem(410px);
-        background-position: right top 18%;    
+        background-position: right top 18%;
+        min-height: rem(650px);    
     }
 
     
@@ -47,15 +49,18 @@
 .hero__container{
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
+    justify-content:space-between;
+    
     height: 100%;
     background: url("../img/bg/bars.png") right center/50% no-repeat;
     padding: rem(24px) rem(0px) rem(59px) rem(0px);
     
     @include tablets{
         background: none;
-     
+        
+    }
+    @include phones{
+        justify-content: space-between;
     }
 
     &::before{
@@ -91,14 +96,14 @@
 .hero__content{
     display: flex;
     flex-direction: column;
-    min-height: 650px;
-    justify-content: space-between;
+    min-height: rem(500px);
+    justify-content: center;
     overflow: hidden;
 
    width: 46%;
 
     @include tablets {
-   
+        min-height: 95%;
         width: 100%;
         flex: 1;
         display: flex;
@@ -113,7 +118,7 @@
             min-height: rem(338px);
             width: rem(325px);
             height: rem(338px);
-            background:  url('../../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
+            background:  url('../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
        
         }
     
@@ -126,13 +131,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        
+        min-height: 95%;
+
         &::before{
             content:""  ;
             display: flex;
             width: rem(325px);
             height: rem(338px);
-            background:  url('../../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
+            background:  url('../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
           
             margin-bottom: rem(23px);
         }
@@ -171,6 +177,7 @@
 }
 
 .hero__features{
+    padding: 0 0 rem(50px) 0;
     @include tablets {
         display: none;
     }
