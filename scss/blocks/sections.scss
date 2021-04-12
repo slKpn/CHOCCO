@@ -6,6 +6,13 @@
     height: 100vh;
 
     
+    @include tablets{
+        height: 100%;
+    }
+    @include phones{
+        height: 100%;
+     
+    }
 }
 .section-why{
     background: url('../img/decor/decor__why/leaf4.png') left center no-repeat;
@@ -42,6 +49,12 @@
         left: 0;
         bottom: rem(-86px);
         z-index: 2;
+
+        @include phones{
+            display: none;
+            
+        }
+        
     }
     &::before{
         content: url('../img/decor/decor__reviews/leaf5.png');

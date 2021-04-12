@@ -435,7 +435,7 @@ img {
   color: #292929;
 }
 .title_size_xl {
-  font-size: rem(48px)/18px0rem;
+  font-size: 2.6666666667rem;
   line-height: 1.2;
 }
 .title_size_m {
@@ -458,6 +458,7 @@ img {
   .hero {
     background-position: right top 25%;
     min-height: 36.1111111111rem;
+    height: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -465,6 +466,7 @@ img {
     background-size: 18rem 22.7777777778rem;
     background-position: right top 18%;
     min-height: 36.1111111111rem;
+    height: 100%;
   }
 }
 .hero::before {
@@ -551,7 +553,7 @@ img {
     width: 18.0555555556rem;
     height: 18.7777777778rem;
     background: url("../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
-    margin-bottom: 1.2777777778rem;
+    margin-bottom: proc(23px);
   }
 }
 
@@ -807,6 +809,16 @@ img {
   min-height: 36.1111111111rem;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .sections {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sections {
+    height: 100%;
+  }
+}
 
 .section-why {
   background: url("../img/decor/decor__why/leaf4.png") left center no-repeat;
@@ -845,6 +857,11 @@ img {
   left: 0;
   bottom: -4.7777777778rem;
   z-index: 2;
+}
+@media screen and (max-width: 480px) {
+  .section-reviews::after {
+    display: none;
+  }
 }
 .section-reviews::before {
   content: url("../img/decor/decor__reviews/leaf5.png");
