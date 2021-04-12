@@ -31,7 +31,7 @@
 }
 .top-line__subtitle{
     max-width: rem(436px);
-    font-size: $baseFontSize;
+    font-size: rem($baseFontSize);
     font-weight: 400;
     text-align: center;
     color: $gray;

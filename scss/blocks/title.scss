@@ -4,11 +4,11 @@
     color: $black;
 
     &_size_xl{
-        font-size: $titleSizeXl;
+        font-size: rem($titleSizeXl);
         line-height: 1.2;
     }
     &_size_m{
-        font-size: $titleSizeM;
+        font-size: rem($titleSizeM);
     }
 }
 .hero__title{
