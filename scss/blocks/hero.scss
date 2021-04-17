@@ -128,6 +128,7 @@
     @include phones{
         font-size: rem(40px);
         padding: 0 rem(10px);
+        margin-bottom: rem(8px);
     }
 }
 .hero__desc{
