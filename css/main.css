@@ -439,7 +439,7 @@ img {
   line-height: 1.2;
 }
 .title_size_m {
-  font-size: rem(27px)/18px0rem;
+  font-size: 1.5rem;
 }
 
 .hero__title {
@@ -1161,6 +1161,16 @@ img {
     margin-bottom: 1.7777777778rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.2222222222rem;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 0.8888888889rem;
+  }
+}
 
 .reviews__content {
   display: flex;
@@ -1190,6 +1200,12 @@ img {
 @media screen and (max-width: 768px) {
   .reviews__text-desc {
     margin-bottom: 0.8888888889rem;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__text-desc {
+    margin-bottom: 0.6666666667rem;
     padding-right: 0;
   }
 }
