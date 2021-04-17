@@ -30,9 +30,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: rem(12px);
+    
+    
+
     @include tablets{
         margin-bottom: rem(14px);
-    }
+        
+    }   
 }
 .forms__label{
     flex: 1;

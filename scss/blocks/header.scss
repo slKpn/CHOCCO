@@ -7,6 +7,11 @@
 
     @include tablets{
         padding: 0 rem(15px);
+        margin-bottom: rem(84px);
+    }
+    @include phones{
+        padding: 0 rem(15px);
+        margin-bottom:0;
     }
     &__logo-wrapper{
         flex-shrink: 0;

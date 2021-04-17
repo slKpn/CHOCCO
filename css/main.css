@@ -449,6 +449,7 @@ img {
 .hero {
   background: url("../img/bg/bg_leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
+  justify-content: center;
   height: 100vh;
   min-height: 34.7222222222rem;
   color: #fff;
@@ -457,16 +458,14 @@ img {
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right top 25%;
-    min-height: 36.1111111111rem;
-    height: 100%;
+    min-height: 55.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
     background-size: 18rem 22.7777777778rem;
     background-position: right top 18%;
-    min-height: 36.1111111111rem;
-    height: 100%;
+    min-height: 44.4444444444rem;
   }
 }
 .hero::before {
@@ -493,7 +492,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   background: url("../img/bg/bars.png") right center/50% no-repeat;
   padding: 1.3333333333rem 0rem 3.2777777778rem 0rem;
 }
@@ -530,10 +528,10 @@ img {
   .hero__content::before {
     content: "";
     display: flex;
-    min-height: 18.7777777778rem;
-    width: 18.0555555556rem;
-    height: 18.7777777778rem;
+    width: 19.6111111111rem;
+    height: 20.4444444444rem;
     background: url("../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
+    margin-bottom: 1.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -545,15 +543,14 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 95%;
   }
   .hero__content::before {
     content: "";
     display: flex;
-    width: 18.0555555556rem;
-    height: 18.7777777778rem;
+    width: 19.6111111111rem;
+    height: 20.4444444444rem;
     background: url("../img/decor/decor__hero/comp_tablets.png") center center/contain no-repeat;
-    margin-bottom: proc(23px);
+    margin-bottom: 1.2777777778rem;
   }
 }
 
@@ -614,6 +611,13 @@ img {
 @media screen and (max-width: 768px) {
   .header {
     padding: 0 0.8333333333rem;
+    margin-bottom: 4.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 0.8333333333rem;
+    margin-bottom: 0;
   }
 }
 .header__logo-wrapper {
@@ -811,21 +815,19 @@ img {
 }
 @media screen and (max-width: 768px) {
   .sections {
-    height: 100%;
+    min-height: 1000px;
   }
 }
 @media screen and (max-width: 480px) {
   .sections {
-    height: 100%;
+    min-height: 800px;
   }
 }
 
 .sections__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  background: url("../img/bg/bars.png") right center/50% no-repeat;
+  justify-content: center;
   padding: 1.3333333333rem 0rem 3.2777777778rem 0rem;
 }
 @media screen and (max-width: 768px) {
@@ -833,12 +835,6 @@ img {
     background: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .sections__container {
-    justify-content: space-between;
-  }
-}
-
 .section-why {
   background: url("../img/decor/decor__why/leaf4.png") left center no-repeat;
   position: relative;

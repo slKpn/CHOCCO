@@ -2,7 +2,7 @@
 .hero{
     background:  url("../img/bg/bg_leaf.png") right bottom no-repeat;
     background-color: $blue;
-    
+    justify-content:center;
     height: 100vh;
     min-height: rem(625px);
     color: #fff;
@@ -10,14 +10,14 @@
    
     @include tablets{
         background-position: right top 25%; 
-        min-height: rem(650px);   
-        height: 100%;
+        min-height: rem(1000px);   
+    
     }
     @include phones{
         background-size: rem(324px) rem(410px);
         background-position: right top 18%;
-        min-height: rem(650px);
-        height: 100%;    
+        min-height: rem(800px);
+  
     }
 
     
@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content:space-between;
     
-    height: 100%;
+    
     background: url("../img/bg/bars.png") right center/50% no-repeat;
     padding: rem(24px) rem(0px) rem(59px) rem(0px);
     
@@ -93,11 +93,11 @@
         &::before{
             content:""  ;
             display: flex;
-            min-height: rem(338px);
-            width: rem(325px);
-            height: rem(338px);
+           
+            width: rem(353px);
+            height: rem(368px);
             background:  url('../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
-       
+            margin-bottom: rem(23px);
         }
     
     }
@@ -109,16 +109,16 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 95%;
+        
 
         &::before{
             content:""  ;
             display: flex;
-            width: rem(325px);
-            height: rem(338px);
+            width: rem(353px);
+            height: rem(368px);
             background:  url('../img/decor/decor__hero/comp_tablets.png') center center / contain no-repeat;
           
-            margin-bottom: proc(23px);
+            margin-bottom: rem(23px);
         }
     }
 }
