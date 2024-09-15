@@ -36,7 +36,7 @@
     width: rem(64px);
     height: rem(68px);
 
-    
+    fill:#2C2E2D;
 
 }
 .advantage__title{
@@ -50,6 +50,6 @@
 .advantage__text-desc{
     p{
         font-weight: 300;
-        font-size: $baseFontSize;
+        font-size: rem($baseFontSize);
     }
 }
