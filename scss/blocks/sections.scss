@@ -5,6 +5,32 @@
     min-height: rem(650px);
     height: 100vh;
 
+    @include tablets{
+        min-height: 1000px;
+    }
+    @include phones{
+        min-height: 775px;
+    }
+}
+.sections__container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+     
+    
+    padding: rem(24px) rem(0px) rem(59px) rem(0px);
+    
+    @include tablets{
+        background: none;
+        
+    }
+    @include phones{
+     
+    }
+
+    
+
+
     
 }
 .section-why{
@@ -42,6 +68,12 @@
         left: 0;
         bottom: rem(-86px);
         z-index: 2;
+
+        @include phones{
+            display: none;
+            
+        }
+        
     }
     &::before{
         content: url('../img/decor/decor__reviews/leaf5.png');

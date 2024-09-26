@@ -1,12 +1,17 @@
 .header{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     margin-bottom: rem(40px);
 
     @include tablets{
         padding: 0 rem(15px);
+        margin-bottom: rem(84px);
+    }
+    @include phones{
+        padding: 0 rem(15px);
+        margin-bottom:0;
     }
     &__logo-wrapper{
         flex-shrink: 0;
@@ -14,22 +19,31 @@
     }
 
 }
+.header__logo{
+    width: rem(52px);
+    height: rem(38px);
+
+    fill: #fff;
+}
 .menu{
     @include tablets{
         display: none;
     }
     flex: 1;
+    padding-top: rem(5px);
 
  
 }
 .menu__list{
     display: flex;
     align-items: center;    
+    justify-content: center;
     flex-wrap: wrap;
 }
 .menu__item{
 
     margin-right: rem(27px);
+    margin-bottom: rem(10px);
     
     &:last-child{
         margin-right: 0;
@@ -47,6 +61,7 @@
   
 }
 .phone__link.phone__link_header{
+    
     @include tablets{
         display: none;
     }

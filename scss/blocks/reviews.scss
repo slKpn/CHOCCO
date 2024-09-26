@@ -84,6 +84,15 @@
         margin-bottom: rem(32px);
         
     }
+    @include tablets{
+        width: rem(130px);
+        height: rem(130px);
+        align-items: center;
+        overflow: hidden;
+        margin-right: 0;
+        margin-bottom: rem(16px);
+        
+    }
 
 }
 .reviews__content{
@@ -113,11 +122,15 @@
         margin-bottom: rem(16px);
         padding-right: 0;
     }
+    @include phones{
+        margin-bottom: rem(12px);
+        padding-right: 0;
+    }
 }
 
 
 .reviews__author{
-    font-size: $baseFontSize;
+    font-size: rem($baseFontSize);
     font-weight:500;
     color: $black;
 }
